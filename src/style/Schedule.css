@@ -1,15 +1,10 @@
-/* App.css
-   - Place QuinlliykRegular-gx3ME.ttf at /public/assets/QuinlliykRegular-gx3ME.ttf
-   - This file gives Quinlliyk ONLY to title selectors:
-     .page-title, .event-title, .signoff h2
-   - All other text uses the theme font classes (font-sans / font-comic / font-serif / font-serif-wide)
-*/
+
 
 /* ---------- FONT ---------- */
 @font-face {
     font-family: 'Quinlliyk';
     /* public/assets recommended for CRA/Vite dev/prod. Change if needed */
-    src: local('Quinlliyk'), url('../public/assets/QuinlliykRegular-gx3ME.ttf') format('truetype');
+    src: local('Quinlliyk'), url('/assets/QuinlliykRegular-gx3ME.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
