@@ -2,16 +2,15 @@ import { useEffect } from "react";
 import "../style/Header.css";
 import bg from '../assets/images/header/bg.jpeg';
 import bgg from '../assets/images/header/bgg.jpg';
-import disk from '../assets/images/header/disk.png';
-import tv from '../assets/images/header/tv.png';
-import tv1 from '../assets/images/header/tv1.png';
-import word from '../assets/images/header/word.png';
-import word2 from '../assets/images/header/word2.png';
-import video1 from '../assets/videos/video1.mp4';
-import video2 from '../assets/videos/video2.mp4';
-import video3 from '../assets/videos/video3.mp4';
-import video4 from '../assets/videos/video4.mp4';
-
+import diskImg from '../assets/images/header/disk.png';
+import tvImg from '../assets/images/header/tv.png';
+import tv1Img from '../assets/images/header/tv1.png';
+import wordImg from '../assets/images/header/word.png';
+import word2Img from '../assets/images/header/word2.png';
+import v1 from '../assets/images/header/v1.png';
+import v2 from '../assets/images/header/v2.png';
+import v3 from '../assets/images/header/v3.png';
+import v4 from '../assets/images/header/v4.jpeg';
 
 export default function Home() {
   useEffect(() => {
@@ -25,65 +24,53 @@ export default function Home() {
 
     const handleResize = () => location.reload();
     window.addEventListener("resize", handleResize);
-
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
     <>
-      {/* =========================================================
-         🌐 WEBSITE LAYOUT (DESKTOP)
-      ========================================================= */}
+      {/* DESKTOP LAYOUT */}
       <div id="desktop-layout">
         <div className="scene">
-          <img src={bgg} className="bg1" />
+          <img src={bgg} className="bg1" alt="" />
+          <img src={wordImg} className="disk-word" alt="" />
+          <img src={word2Img} className="disk-word-2" alt="" />
+          <img src={diskImg} className="disk" alt="" />
+          <img src={tv1Img} className="tv" alt="" />
 
-          <img src={word} className="disk-word" />
-          <img src={word2} className="disk-word-2" />
-
-          <img src={disk} className="disk" />
-          <img src={tv1} className="tv" />
-
-          <video className="tv-video tv-video-1" src={video1} autoPlay muted loop playsInline />
-          <video className="tv-video tv-video-2" src={video2} autoPlay muted loop playsInline />
-          <video className="tv-video tv-video-3" src={video3} autoPlay muted loop playsInline />
-          <video className="tv-video tv-video-4" src={video4} autoPlay muted loop playsInline />
+          {/* Corrected variable names below: v1, v2, v3, v4 */}
+          <img className="tv-video tv-video-1" src={v1} alt="" />
+          <img className="tv-video tv-video-2" src={v2} alt="" />
+          <img className="tv-video tv-video-3" src={v3} alt="" />
+          <img className="tv-video tv-video-4" src={v4} alt="" />
         </div>
       </div>
 
-      {/* =========================================================
-         📱 MOBILE LAYOUT
-      ========================================================= */}
+      {/* MOBILE LAYOUT */}
       <div id="mobile-layout">
         <div className="scene">
-          <img src={bg} className="bg1" />
+          <img src={bg} className="bg1" alt="" />
+          <img src={wordImg} className="disk-word" alt="" />
+          <img src={word2Img} className="disk-word-2" alt="" />
+          <img src={diskImg} className="disk" alt="" />
+          <img src={tvImg} className="tv" alt="" />
 
-          <img src={word} className="disk-word" />
-          <img src={word2} className="disk-word-2" />
-
-          <img src={disk} className="disk" />
-          <img src={tv} className="tv" />
-
-          <video className="tv-video tv-video-1" src={video1} autoPlay muted loop playsInline />
-          <video className="tv-video tv-video-2" src={video2} autoPlay muted loop playsInline />
-          <video className="tv-video tv-video-3" src={video3} autoPlay muted loop playsInline />
-          <video className="tv-video tv-video-4" src={video4} autoPlay muted loop playsInline />
+          <img className="tv-video tv-video-1" src={v1} alt="" />
+          <img className="tv-video tv-video-2" src={v2} alt="" />
+          <img className="tv-video tv-video-3" src={v3} alt="" />
+          <img className="tv-video tv-video-4" src={v4} alt="" />
         </div>
       </div>
     </>
   );
 }
 
-/* =========================================================
-   🌐 WEBSITE JS (UNCHANGED LOGIC)
-========================================================= */
 function runWebsiteJS() {
   const scene = document.querySelector("#desktop-layout .scene");
   if (!scene) return;
 
   const disk = scene.querySelector(".disk");
   const tv = scene.querySelector(".tv");
-  const videos = scene.querySelectorAll(".tv-video");
 
   scene.addEventListener("mousemove", (e) => {
     const x = (e.clientX / window.innerWidth - 0.5) * 30;
@@ -100,44 +87,18 @@ function runWebsiteJS() {
     tv.style.transform = "translateZ(0)";
   });
 
-  videos.forEach((video) => {
-    video.addEventListener("mouseenter", () => {
-      video.muted = false;
-      video.play();
-    });
-
-    video.addEventListener("mouseleave", () => {
-      video.muted = true;
-    });
-  });
+  // Video logic removed because tags are now <img>
 }
 
-/* =========================================================
-   📱 MOBILE JS (UNCHANGED LOGIC)
-========================================================= */
 function runMobileJS() {
   const scene = document.querySelector("#mobile-layout .scene");
   if (!scene) return;
 
   const tv = scene.querySelector(".tv");
-  const videos = scene.querySelectorAll(".tv-video");
   const words = scene.querySelectorAll(".disk-word, .disk-word-2");
 
-  let popped = false;
-
   tv.addEventListener("click", () => {
-    popped = !popped;
-    tv.classList.toggle("pop", popped);
-  });
-
-  videos.forEach((video) => {
-    let soundOn = false;
-
-    video.addEventListener("click", () => {
-      soundOn = !soundOn;
-      video.muted = !soundOn;
-      soundOn ? video.play() : video.pause();
-    });
+    tv.classList.toggle("pop");
   });
 
   words.forEach((word) => {

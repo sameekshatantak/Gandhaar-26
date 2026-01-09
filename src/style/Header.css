@@ -220,14 +220,23 @@
     filter: drop-shadow(0 0 25px #00FFFF) brightness(1.4);
   }
 
+  /* Update this block in your @media (min-width: 769px) */
   .tv-video {
     position: absolute;
     z-index: 15;
     object-fit: cover;
+    /* This keeps images from stretching */
     border-radius: 4px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+
+    /* Visual Styles */
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.4),
+      0 0 25px rgba(255, 255, 255, 0.2);
     cursor: pointer;
-    /* shows it’s clickable */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+    /* Prevents the default browser "ghost" image when clicking/dragging */
+    user-select: none;
+    -webkit-user-drag: none;
   }
 
   /* Example: video 1 positioning */
@@ -367,7 +376,7 @@
     position: relative;
     width: 100vw;
     height: 200vw;
-    overflow: hiddden;
+    overflow: hidden;
     perspective: 2000px;
   }
 
@@ -444,14 +453,18 @@
   }
 
   /* VIDEOS */
+  /* Update this block in your @media (max-width: 768px) */
+  /* Update this block in your @media (max-width: 768px) */
   .tv-video {
     position: absolute;
     z-index: 15;
     object-fit: cover;
+    /* Essential for images */
     border-radius: 4px;
-    box-shadow:
-      0 0 12px rgba(255, 255, 255, 0.4),
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.4),
       0 0 25px rgba(255, 255, 255, 0.2);
+    pointer-events: auto;
+    -webkit-user-drag: none;
   }
 
   /* VIDEO VARIABLES */
