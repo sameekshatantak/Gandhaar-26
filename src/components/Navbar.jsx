@@ -132,7 +132,7 @@ export default function Navbar() {
 
   .body-container {
     left: 50%;
-    bottom: 0;                        /* 🔥 NO reserved space */
+    bottom: 10px;                        /* 🔥 NO reserved space */
     transform: translateX(-50%) scale(0.7);
     transform-origin: bottom;
     opacity: ${isOpen ? "1" : "0"};

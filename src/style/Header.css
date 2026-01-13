@@ -472,7 +472,7 @@
     width: var(--video1-width);
     height: var(--video1-height);
     left: var(--video1-left);
-    top: var(--video1-top);
+    top: 498px;
   }
 
   .tv-video-2 {
@@ -486,7 +486,7 @@
     width: var(--video3-width);
     height: var(--video3-height);
     left: var(--video3-left);
-    top: var(--video3-top);
+    top: 431px;
   }
 
   .tv-video-4 {

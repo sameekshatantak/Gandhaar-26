@@ -24,13 +24,14 @@ const AboutUs = () => {
         if (isVideoOpen) {
             document.body.style.overflow = 'hidden';
         } else {
-            document.body.style.overflow = 'unset';
+            document.body.style.overflow = 'auto';
+            document.body.style.overflowX = 'hidden';
         }
 
         window.addEventListener('keydown', handleKeyDown);
         return () => {
             window.removeEventListener('keydown', handleKeyDown);
-            document.body.style.overflow = 'unset';
+            document.body.style.overflowX = 'hidden';
         };
     }, [isVideoOpen]);
 
@@ -50,12 +51,12 @@ const AboutUs = () => {
                         <h2 className="about-us-title">About Us</h2>
 
                         <div className="meta-data">
-                            <span>IMDb 9.9/10</span>
-                            <span className="dot">•</span>
-                            <span>2026</span>
-                            <span className="dot">•</span>
-                            <span>4 Days</span>
-                            <span className="dot">•</span>
+                            <span>IMDb 9.9/10 •</span>
+
+                            <span>2026  •</span>
+
+                            <span>4 Days  •</span>
+
                             <span>Cultural • Creative • Emotional</span>
                         </div>
 
