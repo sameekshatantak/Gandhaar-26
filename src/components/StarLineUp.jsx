@@ -114,7 +114,7 @@ const StarLineUp = () => {
 
                 <div className="status-container">
                     {isFinished ? (
-                        <h2 className="celebration-text"><b>MADARI.LIVE🎉</b></h2>
+                        <h2 className="celebration-text"><b>MADARI.LIVE🎉<br></br> DJ NIGHT(16th February)</b></h2>
                     ) : (
                         <p className="scroll-hint">Unlock the curtains by answering the quiz below ↓</p>
                     )}

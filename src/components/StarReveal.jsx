@@ -267,7 +267,8 @@ const StarReveal = () => {
 
         {isRevealed && (
   <div className="reveal-below-text">
-    BLACKSHEEP
+    BLACKSHEEP <br></br>
+    Retro Jam Night(17th Februray)
   </div>
 )}
 

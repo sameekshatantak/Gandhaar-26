@@ -38,6 +38,40 @@
 }
 
 
+/* =========================
+   Responsive: Tablets
+========================= */
+@media (max-width: 1024px) {
+  .reveal-below-text {
+    font-size: 2.4rem;
+    letter-spacing: 0.28em;
+    margin-top: 1.6rem;
+  }
+}
+
+/* =========================
+   Responsive: Mobile
+========================= */
+@media (max-width: 768px) {
+  .reveal-below-text {
+    font-size: 1.9rem;
+    letter-spacing: 0.22em;
+    margin-top: 1.2rem;
+  }
+}
+
+/* =========================
+   Small Mobile (phones)
+========================= */
+@media (max-width: 480px) {
+  .reveal-below-text {
+    font-size: 1.5rem;
+    letter-spacing: 0.18em;
+    margin-top: 1rem;
+  }
+}
+
+
 /* Laptops */
 @media (max-width: 1280px) {
   :root {
