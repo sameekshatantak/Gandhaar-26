@@ -111,7 +111,7 @@ const SCHEDULE = [
     { id: 4, date: "Feb 15", category: "DAYTIME EDITIONS", title: "CTV Style Lab", time: "12:00 PM - 2:30 PM", venue: "Instrumentation Quadrangle", code: "" },
     { id: 5, date: "Feb 15", category: "DAYTIME EDITIONS", title: "CTV's Next Spell Star", time: "12:30 PM - 2:30 PM", venue: "KB Joshi Auditorium", code: "" },
     { id: 6, date: "Feb 15", category: "DAYTIME EDITIONS", title: "Khatron Ke Khiladi", time: "12:15 PM - 02:00 PM", venue: "Mechanical Circle", code: "" },
-    { id: 7, date: "Feb 15", category: "DAYTIME EDITIONS", title: "Aap ki Adalat", time: "12:00 PM - 02:30 PM", venue: "Stage 2", code: "" },
+    { id: 7, date: "Feb 15", category: "DAYTIME EDITIONS", title: "Aap ki Adalat", time: "2:30 PM - 04:30 PM", venue: "Mechanical Auditorium", code: "" },
     { id: 8, date: "Feb 15", category: "DAYTIME EDITIONS", title: "Game of Strokes", time: "02:30 PM - 04:30 PM", venue: "Between Main & IT Building", code: "" },
     { id: 9, date: "Feb 15", category: "WORKSHOPS", title: "Tote Bag Workshop", time: "12:30 PM - 2:30 PM", venue: "TBA", code: "" },
     { id: 10, date: "Feb 15", category: "WORKSHOPS", title: "Dance Workshop", time: "12:00 PM - 2:00 PM", venue: "Stage 2", code: "" },
@@ -127,7 +127,7 @@ const SCHEDULE = [
     { id: 19, date: "Feb 16", category: "DAYTIME EDITIONS", title: "ABCD - All About Cummins Dance", time: "02:00 PM - 04:00 PM", venue: "Stage 2", code: "" },
     { id: 20, date: "Feb 16", category: "WORKSHOPS", title: "Perfume Making Workshop", time: "02:00 PM - 04:00 PM", venue: "Mechanical Conference", code: "" },
     { id: 21, date: "Feb 16", category: "SHOWCASES", title: "Kalawant Live", time: "03:30 PM - 04:30 PM", venue: "Ichalkaranji Hall", code: "" },
-    { id: 22, date: "Feb 16", category: "SUNDOWNER", title: "Star Night - Band Performance", time: "05:00 PM - 08:00 PM", venue: "Samstha Ground", code: "" },
+    { id: 22, date: "Feb 16", category: "SUNDOWNER", title: "Star Night 1 - Band Performance", time: "05:00 PM - 08:00 PM", venue: "Samstha Ground", code: "" },
     { id: 23, date: "Feb 16", category: "SUNDOWNER", title: "DJ Night", time: "08:00 PM - 09:30 PM", venue: "Samstha Ground", code: "" },
 
 
@@ -142,7 +142,7 @@ const SCHEDULE = [
     { id: 32, date: "Feb 17", category: "DAYTIME EDITIONS", title: "Campus Idol - Group Edition", time: "02:00 PM - 04:00 PM", venue: "KB Joshi Auditorium", code: "" },
     { id: 33, date: "Feb 17", category: "DAYTIME EDITIONS", title: "Dear Diary", time: "03:00 PM - 05:00 PM", venue: "Stage 2", code: "" },
     { id: 34, date: "Feb 17", category: "SUNDOWNER", title: "AURA: The Inter-Class Runway", time: "05:00 PM - 08:00 PM", venue: "Samstha Ground", code: "" },
-    { id: 35, date: "Feb 17", category: "SUNDOWNER", title: "Retro Jam Night", time: "08:30 PM - 10:00 PM", venue: "Samstha Ground", code: "" },
+    { id: 35, date: "Feb 17", category: "SUNDOWNER", title: "Star Night 2 -Retro Jam Night", time: "08:30 PM - 10:00 PM", venue: "Samstha Ground", code: "" },
     
 
     { id: 36, date: "Feb 18", category: "DAYTIME EDITIONS", title: "Taal Tarang", time: "10:00 AM - 01:00 PM", venue: "Main Building Quadrangle", code: "" },
