@@ -27,7 +27,7 @@ const IST_OFFSET_MIN = 330; // +5:30 in minutes
  *  - titleColor, titleShadow, titleStroke for inline title styling
  */
 const THEMES = {
-    "Jan 28": {
+    "Feb 15": {
         id: "day1",
         name: "UNSCRIPTED UNHINGED",
         bgGradient: "linear-gradient(135deg, #FACA78 0%, #DD5341 100%)",
@@ -45,7 +45,7 @@ const THEMES = {
         titleShadow: "0 6px 28px rgba(0,0,0,0.6)",
         titleStroke: "rgba(0,0,0,0.55)",
     },
-    "Jan 29": {
+    "Feb 16": {
         id: "day2",
         name: "TOONVERSE",
         bgGradient: "linear-gradient(135deg, #68C7C1 0%, #FACA78 100%)",
@@ -64,7 +64,7 @@ const THEMES = {
         titleShadow: "0 6px 18px rgba(0,0,0,0.08)",
         titleStroke: "rgba(255,255,255,0.9)",
     },
-    "Jan 30": {
+    "Feb 17": {
         id: "day3",
         name: "COMEDY CENTRE",
         bgGradient: "linear-gradient(135deg, #68C7C1 0%, #F57F5B 100%)",
@@ -83,7 +83,7 @@ const THEMES = {
         titleShadow: "0 6px 20px rgba(0,0,0,0.5)",
         titleStroke: "rgba(0,0,0,0.5)",
     },
-    "Jan 31": {
+    "Feb 18": {
         id: "day4",
         name: "PARAMPARA PRIME",
         bgGradient: "linear-gradient(180deg, #794A3A 0%, #F57F5B 100%)",
@@ -105,51 +105,55 @@ const THEMES = {
 
 /** --- DUMMY DATA (kept as-is) --- */
 const SCHEDULE = [
-    { id: 1, date: "Jan 28", category: "SHOWCASES", title: "Inauguration", time: "10:00 AM - 12:00 PM", venue: "Main Building Quadrangle", code: "" },
-    { id: 2, date: "Jan 28", category: "DAYTIME EDITIONS", title: "Antakshari Premiere League", time: "12:30 PM - 2:30 PM", venue: "Main Building Quadrangle", code: "" },
-    { id: 3, date: "Jan 28", category: "DAYTIME EDITIONS", title: "Mastersketch", time: "12:30 PM - 2:00 PM", venue: "Between Main & IT Building", code: "" },
-    { id: 4, date: "Jan 28", category: "DAYTIME EDITIONS", title: "CTV Style Lab", time: "12:30 PM - 2:30 PM", venue: "Instrumentation Quadrangle", code: "" },
-    { id: 5, date: "Jan 28", category: "DAYTIME EDITIONS", title: "CTV's Next Spell Star", time: "12:30 PM - 2:30 PM", venue: "KB Joshi Auditorium", code: "" },
-    { id: 6, date: "Jan 28", category: "DAYTIME EDITIONS", title: "Khatron Ke Khiladi", time: "12:00 PM - 02:00 PM", venue: "Mechanical Circle", code: "" },
-    { id: 7, date: "Jan 28", category: "DAYTIME EDITIONS", title: "Aap ki Adalat", time: "02:30 PM - 04:30 PM", venue: "Stage 2", code: "" },
-    { id: 8, date: "Jan 28", category: "DAYTIME EDITIONS", title: "Game of Strokes", time: "02:30 PM - 04:30 PM", venue: "Between Main & IT Building", code: "" },
-    { id: 9, date: "Jan 28", category: "DAYTIME EDITIONS", title: "QALA", time: "02:30 PM - 04:30 PM", venue: "Mechanical Circle", code: "" },
-    { id: 10, date: "Jan 28", category: "SUNDOWNER", title: "Nach Baliye: Class Wars", time: "05:00 PM - 10:00 PM", venue: "Samstha Ground", code: "" },
+    { id: 1, date: "Feb 15", category: "SHOWCASES", title: "Inauguration", time: "10:00 AM - 11:30 PM", venue: "Main Building Quadrangle", code: "" },
+    { id: 2, date: "Feb 15", category: "DAYTIME EDITIONS", title: "Antakshari Premiere League", time: "12:00 PM - 2:00 PM", venue: "Main Building Quadrangle", code: "" },
+    { id: 3, date: "Feb 15", category: "DAYTIME EDITIONS", title: "Mastersketch", time: "12:30 PM - 2:00 PM", venue: "Between Main & IT Building", code: "" },
+    { id: 4, date: "Feb 15", category: "DAYTIME EDITIONS", title: "CTV Style Lab", time: "12:00 PM - 2:30 PM", venue: "Instrumentation Quadrangle", code: "" },
+    { id: 5, date: "Feb 15", category: "DAYTIME EDITIONS", title: "CTV's Next Spell Star", time: "12:30 PM - 2:30 PM", venue: "KB Joshi Auditorium", code: "" },
+    { id: 6, date: "Feb 15", category: "DAYTIME EDITIONS", title: "Khatron Ke Khiladi", time: "12:15 PM - 02:00 PM", venue: "Mechanical Circle", code: "" },
+    { id: 7, date: "Feb 15", category: "DAYTIME EDITIONS", title: "Aap ki Adalat", time: "12:00 PM - 02:30 PM", venue: "Stage 2", code: "" },
+    { id: 8, date: "Feb 15", category: "DAYTIME EDITIONS", title: "Game of Strokes", time: "02:30 PM - 04:30 PM", venue: "Between Main & IT Building", code: "" },
+    { id: 9, date: "Feb 15", category: "WORKSHOPS", title: "Tote Bag Workshop", time: "12:30 PM - 2:30 PM", venue: "TBA", code: "" },
+    { id: 10, date: "Feb 15", category: "WORKSHOPS", title: "Dance Workshop", time: "12:00 PM - 2:00 PM", venue: "Stage 2", code: "" },
+    { id: 11, date: "Feb 15", category: "DAYTIME EDITIONS", title: "QALA(Mehendi)", time: "02:30 PM - 04:30 PM", venue: "Mechanical Circle", code: "" },
+    { id: 12, date: "Feb 15", category: "SUNDOWNER", title: "Nach Baliye: Class Wars", time: "05:00 PM - 09:30 PM", venue: "Samstha Ground", code: "" },
 
-    { id: 11, date: "Jan 29", category: "DAYTIME EDITIONS", title: "Flow State: Intercollege Dance Battle", time: "10:00 AM - 12:30 PM", venue: "Main Building Quadrangle", code: "" },
-    { id: 12, date: "Jan 29", category: "DAYTIME EDITIONS", title: "Toon & Me", time: "10:00 AM - 12:00 PM", venue: "Between Main & IT Building", code: "" },
-    { id: 13, date: "Jan 29", category: "SHOWCASES", title: "Swarashree Live Unplugged", time: "12:30 PM - 01:00 PM", venue: "Stage 2", code: "" },
-    { id: 14, date: "Jan 29", category: "WORKSHOPS", title: "Workshop 1", time: "", venue: "", code: "" },
-    { id: 15, date: "Jan 29", category: "WORKSHOPS", title: "Workshop 2", time: "", venue: "", code: "" },
-    { id: 16, date: "Jan 29", category: "DAYTIME EDITIONS", title: "Fit Check: Eco Edition", time: "01:00 PM - 03:00 PM", venue: "Main Building Quadrangle", code: "" },
-    { id: 17, date: "Jan 29", category: "DAYTIME EDITIONS", title: "ABCD - All About Cummins Dance", time: "02:00 PM - 04:00 PM", venue: "Stage 2", code: "" },
-    { id: 18, date: "Jan 29", category: "SHOWCASES", title: "Kalawant Live", time: "03:30 PM - 04:30 PM", venue: "Ichalkaranji Hall", code: "" },
-    { id: 19, date: "Jan 29", category: "SUNDOWNER", title: "AURA: The Inter-Class Runway", time: "05:00 PM - 08:00 PM", venue: "Samstha Ground", code: "" },
-    { id: 20, date: "Jan 29", category: "SUNDOWNER", title: "Retro Jam Night", time: "08:30 PM - 10:00 PM", venue: "Samstha Ground", code: "" },
+    { id: 13, date: "Feb 16", category: "DAYTIME EDITIONS", title: "Flow State: Intercollege Dance Battle", time: "10:00 AM - 12:30 PM", venue: "Main Building Quadrangle", code: "" },
+    { id: 14, date: "Feb 16", category: "DAYTIME EDITIONS", title: "Toon & Me", time: "10:00 AM - 12:00 PM", venue: "Between Main & IT Building", code: "" },
+    { id: 15, date: "Feb 16", category: "SHOWCASES", title: "Swarashree Live Unplugged", time: "12:30 PM - 01:00 PM", venue: "Stage 2", code: "" },
+    { id: 16, date: "Feb 16", category: "DAYTIME EDITIONS", title: "Dora The Doodler", time: "12:30 pM - 2:30 PM", venue: "Between Main & IT Building", code: "" },
+    { id: 17, date: "Feb 16", category: "WORKSHOPS", title: "Clay Magnet Workshop", time: "1:00 PM - 3:00 PM", venue: "TBA", code: "" },
+    { id: 18, date: "Feb 16", category: "DAYTIME EDITIONS", title: "Fit Check: Eco Edition", time: "01:00 PM - 03:00 PM", venue: "Main Building Quadrangle", code: "" },
+    { id: 19, date: "Feb 16", category: "DAYTIME EDITIONS", title: "ABCD - All About Cummins Dance", time: "02:00 PM - 04:00 PM", venue: "Stage 2", code: "" },
+    { id: 20, date: "Feb 16", category: "WORKSHOPS", title: "Perfume Making Workshop", time: "02:00 PM - 04:00 PM", venue: "Mechanical Conference", code: "" },
+    { id: 21, date: "Feb 16", category: "SHOWCASES", title: "Kalawant Live", time: "03:30 PM - 04:30 PM", venue: "Ichalkaranji Hall", code: "" },
+    { id: 22, date: "Feb 16", category: "SUNDOWNER", title: "Star Night - Band Performance", time: "05:00 PM - 08:00 PM", venue: "Samstha Ground", code: "" },
+    { id: 23, date: "Feb 16", category: "SUNDOWNER", title: "DJ Night", time: "08:00 PM - 09:30 PM", venue: "Samstha Ground", code: "" },
 
-    { id: 21, date: "Jan 30", category: "DAYTIME EDITIONS", title: "LOL Sabha", time: "10:00 AM - 12:00 PM", venue: "Main Building Quadrangle", code: "" },
-    { id: 22, date: "Jan 30", category: "DAYTIME EDITIONS", title: "The One Where I Dance", time: "10:00 AM - 02:00 PM", venue: "Stage 2", code: "" },
-    { id: 23, date: "Jan 30", category: "WORKSHOPS", title: "Workshop 3", time: "", venue: "", code: "" },
-    { id: 24, date: "Jan 30", category: "DAYTIME EDITIONS", title: "Ksauti MakeUp Ki", time: "11:00 AM - 01:00 PM", venue: "Mechanical Circle", code: "" },
-    { id: 25, date: "Jan 30", category: "DAYTIME EDITIONS", title: "Traitors", time: "11:00 AM - 01:00 PM", venue: "Entire IT Building", code: "" },
-    { id: 26, date: "Jan 30", category: "DAYTIME EDITIONS", title: "Brooklyn Fine-Dine", time: "10:00 AM - 02:00 PM", venue: "between Main & IT Building", code: "" },
-    { id: 27, date: "Jan 30", category: "WORKSHOPS", title: "Workshop 4", time: "", venue: "", code: "" },
-    { id: 28, date: "Jan 30", category: "DAYTIME EDITIONS", title: "Cummins Next Supermodel", time: "02:00 PM - 04:30 PM", venue: "Main Building Quadrangle", code: "" },
-    { id: 29, date: "Jan 30", category: "DAYTIME EDITIONS", title: "Pass the Brush", time: "02:30 PM - 04:30 PM", venue: "Between Main & IT Building", code: "" },
-    { id: 30, date: "Jan 30", category: "DAYTIME EDITIONS", title: "Campus Idol - Group Edition", time: "02:00 PM - 04:00 PM", venue: "KB Joshi Auditorium", code: "" },
-    { id: 31, date: "Jan 30", category: "DAYTIME EDITIONS", title: "Dear Diary", time: "03:00 PM - 05:00 PM", venue: "Stage 2", code: "" },
-    { id: 32, date: "Jan 30", category: "SUNDOWNER", title: "Star Night 2 - Band Performance", time: "06:00 PM - 08:00 PM", venue: "Samstha Ground", code: "" },
-    { id: 33, date: "Jan 30", category: "SUNDOWNER", title: "DJ Night", time: "08:30 PM - 09:00 PM", venue: "Samstha Ground", code: "" },
 
-    { id: 34, date: "Jan 31", category: "DAYTIME EDITIONS", title: "Taal Tarang", time: "10:00 AM - 01:00 PM", venue: "KB Joshi Auditorium", code: "" },
-    { id: 35, date: "Jan 31", category: "DAYTIME EDITIONS", title: "Pitch Perfect", time: "10:00 AM - 01:00 PM", venue: "Main Building Quadrangle", code: "" },
-    { id: 36, date: "Jan 31", category: "DAYTIME EDITIONS", title: "TRP Talkies", time: "01:00 PM - 04:30 PM", venue: "Main Building Quadrangle", code: "" },
-    { id: 37, date: "Jan 31", category: "DAYTIME EDITIONS", title: "Nukkadnama", time: "12:00 PM - 04:00 PM", venue: "Stage 2", code: "" },
-    { id: 38, date: "Jan 31", category: "DAYTIME EDITIONS", title: "Ye Rang Kya Kehlata Hai", time: "12:00 PM - 03:00 PM", venue: "Between Main & IT Building", code: "" },
-    { id: 39, date: "Jan 31", category: "SHOWCASES", title: "Kalakaar Katta", time: "11:00 AM - 05:00 PM", venue: "Instrumentation Quadrangle", code: "" },
-    { id: 40, date: "Jan 31", category: "DAYTIME EDITIONS", title: "Junk Genius", time: "01:00 PM - 03:00 PM", venue: "Mechanical Circle", code: "" },
-    { id: 41, date: "Jan 31", category: "SHOWCASES", title: "Prize Distribution", time: "05:30 PM - 07:30 PM", venue: "Main Building Quadrangle", code: "" },
-    { id: 42, date: "Jan 31", category: "SUNDOWNER", title: "Gandhaar Feast", time: "07:30 PM - 09:30 PM", venue: "Samstha Ground", code: "" },
+    { id: 24, date: "Feb 17", category: "DAYTIME EDITIONS", title: "LOL Sabha", time: "10:00 AM - 12:00 PM", venue: "Main Building Quadrangle", code: "" },
+    { id: 25, date: "Feb 17", category: "DAYTIME EDITIONS", title: "The One Where I Dance", time: "10:00 AM - 02:00 PM", venue: "Stage 2", code: "" },
+    { id: 26, date: "Feb 17", category: "WORKSHOPS", title: "Clandle Making Workshop", time: "12:00 PM - 2:00 PM", venue: "Mechanical Conference", code: "" },
+    { id: 27, date: "Feb 17", category: "DAYTIME EDITIONS", title: "Ksauti MakeUp Ki", time: "11:00 AM - 01:00 PM", venue: "Mechanical Circle", code: "" },
+    { id: 28, date: "Feb 17", category: "DAYTIME EDITIONS", title: "Traitors", time: "11:00 AM - 01:00 PM", venue: "Entire IT Building", code: "" },
+    { id: 29, date: "Feb 17", category: "DAYTIME EDITIONS", title: "Brooklyn Fine-Dine", time: "10:00 AM - 02:00 PM", venue: "between Main & IT Building", code: "" },
+    { id: 30, date: "Feb 17", category: "DAYTIME EDITIONS", title: "Cummins Next Supermodel", time: "02:00 PM - 04:30 PM", venue: "Main Building Quadrangle", code: "" },
+    { id: 31, date: "Feb 17", category: "DAYTIME EDITIONS", title: "Pass the Brush", time: "02:30 PM - 04:30 PM", venue: "Between Main & IT Building", code: "" },
+    { id: 32, date: "Feb 17", category: "DAYTIME EDITIONS", title: "Campus Idol - Group Edition", time: "02:00 PM - 04:00 PM", venue: "KB Joshi Auditorium", code: "" },
+    { id: 33, date: "Feb 17", category: "DAYTIME EDITIONS", title: "Dear Diary", time: "03:00 PM - 05:00 PM", venue: "Stage 2", code: "" },
+    { id: 34, date: "Feb 17", category: "SUNDOWNER", title: "AURA: The Inter-Class Runway", time: "05:00 PM - 08:00 PM", venue: "Samstha Ground", code: "" },
+    { id: 35, date: "Feb 17", category: "SUNDOWNER", title: "Retro Jam Night", time: "08:30 PM - 10:00 PM", venue: "Samstha Ground", code: "" },
+    
+
+    { id: 36, date: "Feb 18", category: "DAYTIME EDITIONS", title: "Taal Tarang", time: "10:00 AM - 01:00 PM", venue: "Main Building Quadrangle", code: "" },
+    { id: 37, date: "Feb 18", category: "DAYTIME EDITIONS", title: "Pitch Perfect", time: "10:00 AM - 01:00 PM", venue: "Mechanical Auditorium", code: "" },
+    { id: 38, date: "Feb 18", category: "DAYTIME EDITIONS", title: "TRP Talkies", time: "01:00 PM - 04:30 PM", venue: "Main Building Quadrangle", code: "" },
+    { id: 39, date: "Feb 18", category: "DAYTIME EDITIONS", title: "Nukkadnama", time: "12:00 PM - 04:00 PM", venue: "Stage 2", code: "" },
+    { id: 40, date: "Feb 18", category: "DAYTIME EDITIONS", title: "Ye Rang Kya Kehlata Hai", time: "12:00 PM - 03:00 PM", venue: "Between Main & IT Building", code: "" },
+    { id: 41, date: "Feb 18", category: "SHOWCASES", title: "Kalakaar Katta", time: "11:00 AM - 05:00 PM", venue: "Instrumentation Quadrangle", code: "" },
+    { id: 42, date: "Feb 18", category: "DAYTIME EDITIONS", title: "Junk Genius", time: "01:00 PM - 03:00 PM", venue:"Mechanical Circle" , code:"" },
+    { id: 43, date: "Feb 18", category: "SHOWCASES", title: "Valedictory", time: "05:30 PM - 07:30 PM", venue: "Main Building Quadrangle", code: "" },
+    { id: 44, date: "Feb 18", category: "SUNDOWNER", title: "Gandhaar Feast", time: "07:30 PM - 09:30 PM", venue: "Samstha Ground", code: "" },
 ];
 
 const CATEGORIES = ["ALL", "SHOWCASES", "DAYTIME EDITIONS", "WORKSHOPS", "SUNDOWNER"];
@@ -279,7 +283,7 @@ const NowPlayingBadge = ({ active }) => {
 };
 
 const Schedule = () => {
-    const [activeDate, setActiveDate] = useState("Jan 28");
+    const [activeDate, setActiveDate] = useState("Feb 15");
     const [activeCategory, setActiveCategory] = useState("ALL");
     const [simulatedNow, setSimulatedNow] = useState(null);
 

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import comingSoonImage from '../assets/images/coming-soon.png';
+import Blacksheep from '../assets/images/Blacksheep.png';
 import "../style/StarReveal.css";
 
 /* =======================
@@ -177,7 +177,7 @@ const ScratchScreen = ({ onReveal, hidden }) => {
   };
 
   if (hidden) {
-    return <img src={comingSoonImage} className="scratch-image" alt="Coming Soon" />;
+    return <img src={Blacksheep} className="scratch-image" alt="Blacksheep" />;
   }
 
   return (
@@ -221,7 +221,7 @@ const StarReveal = () => {
   return (
     <div className="page-container">
       <div className="tv-container">
-        <h1 className="gold-text">Star Night 1</h1>
+        <h1 className="gold-text">Star Night 2</h1>
         <h2 className="gold-subtitle">Something Iconic is loading...</h2>
         <h2 className="gold-subtitle">Can you guess what it is?</h2>
         <br></br>
@@ -264,6 +264,12 @@ const StarReveal = () => {
           <div className="tv-foot" />
           <div className="tv-foot" />
         </div>
+
+        {isRevealed && (
+  <div className="reveal-below-text">
+    BLACKSHEEP
+  </div>
+)}
 
         {showConfetti && <Confetti />}
       </div>

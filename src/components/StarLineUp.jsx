@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import MadariLive from '../assets/images/MadariLive.png';
 import '../style/StarLineUp.css';
 
 const REVEAL_DATE_IST = "2026-01-25T00:45:00";
@@ -49,9 +50,9 @@ const StarLineUp = () => {
         const now = new Date();
         const target = new Date(REVEAL_DATE_IST);
         if (now >= target) {
-            setTargetImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVp7SBi1bqOik8QH9ogzJ98LT1VWP6JZxSmw&s");
+            setTargetImage(MadariLive);
         } else {
-            setTargetImage("https://media.gettyimages.com/id/1469393237/video/4k-glowing-yellow-neon-text-coming-soon.jpg?s=640x640&k=20&c=dzDQuuUIod8gcf-EXQzeEXaz0iHZA6hXLn39p6QdJeI=");
+            setTargetImage(MadariLive);
         }
 
         const shuffled = [...questionPool].sort(() => 0.5 - Math.random()).slice(0, 4);
@@ -90,7 +91,7 @@ const StarLineUp = () => {
             )}
 
             <section className="reveal-section">
-                <h1 className="gold-text">Star Night 2</h1>
+                <h1 className="gold-text">Star Night 1</h1>
 
                 <div className="theatre-stage">
                     {currentStep === 4 && (
@@ -113,7 +114,7 @@ const StarLineUp = () => {
 
                 <div className="status-container">
                     {isFinished ? (
-                        <h2 className="celebration-text">🎉 REVEALED! 🎉</h2>
+                        <h2 className="celebration-text"><b>MADARI.LIVE🎉</b></h2>
                     ) : (
                         <p className="scroll-hint">Unlock the curtains by answering the quiz below ↓</p>
                     )}

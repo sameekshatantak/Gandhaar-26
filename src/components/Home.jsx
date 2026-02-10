@@ -17,11 +17,11 @@ import DevTeam from "./DevTeam";
 
 import GandhaarTheme from "./GandhaarTheme";
 import Header from "./Header";
+import HomeEvent from "./HomeEvent";
 import Navbar from "./Navbar";
+import Schedule from "./Schedule";
 import StarLineUp from "./StarLineUp";
 import StarReveal from "./StarReveal";
-import HomeEvent from "./HomeEvent";
-import Schedule from "./Schedule";
 
 let GLOBAL_MUTED = false;
 
@@ -78,6 +78,13 @@ function Home() {
               </section>
             </GrainWrapper>
             {/* EVENTS */}
+            {/* STAR LINEUP */}
+            <GrainWrapper bgColor="#794a3a">
+
+              <StarLineUp />
+
+            </GrainWrapper>
+
             <GrainWrapper bgColor="#dd5341">
               <section id="lineup">
                 <StarReveal />
@@ -85,12 +92,7 @@ function Home() {
               </section>
             </GrainWrapper>
 
-            {/* STAR LINEUP */}
-            <GrainWrapper bgColor="#794a3a">
 
-              <StarLineUp />
-
-            </GrainWrapper>
 
             <section id="schedule">
               <Schedule />
